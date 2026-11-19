@@ -1,0 +1,14 @@
+{
+  "name": "desktop-todo-board",
+  "version": "1.0.0",
+  "description": "固定在桌面的文字/图片混排待办看板，支持 ddl 提醒",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}
