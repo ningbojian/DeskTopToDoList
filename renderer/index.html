@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>桌面看板</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="board">
+    <header class="titlebar" id="titlebar">
+      <div class="brand"><span class="dot"></span>桌面看板</div>
+      <div class="tools">
+        <button class="tbtn" id="btn-mode" title="切换置顶 / 贴桌面">📌</button>
+        <button class="tbtn" id="btn-add-text" title="添加文字待办">＋</button>
+        <button class="tbtn" id="btn-add-image" title="添加图片（也可直接拖进来）">🖼</button>
+        <button class="tbtn" id="btn-hide" title="隐藏到托盘">—</button>
+      </div>
+    </header>
+
+    <div class="content" id="content"></div>
+
+    <footer class="footer">
+      <span class="hint" id="hint">拖图片到窗口即可添加 · 拖标题栏移动</span>
+      <span class="count" id="count"></span>
+    </footer>
+    <div class="resizer" id="resizer" title="拖动缩放"></div>
+
+    <div class="drop-mask" id="drop-mask"><div class="drop-inner">📥 松开添加图片</div></div>
+    <div class="review-mask" id="review-mask"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
